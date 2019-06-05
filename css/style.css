@@ -137,11 +137,24 @@ img{
     border-bottom: var(--primary-color) 5px solid;;
 }
 
+/* Tab content */
 .tab-content{
     padding: 3rem 0;
     background: #000;
     color: #fff;
 }
+
+/* Hide content initially */
+#tab-1-content,
+#tab-2-content,
+#tab-3-content{
+     display: none;
+}
+
+.show{
+    display: block !important;
+}
+
 
 #tab-1-content .tab-1-content-inner{
     display: grid;
@@ -275,7 +288,7 @@ img{
     border-radius: 2px;
 }
 
-btn hover{
+.btn:hover{
     opacity: 0.9;
 }
 
@@ -293,6 +306,10 @@ btn hover{
     padding: 0.8rem 1.3rem;
     font-size: 1rem;
     text-transform: uppercase;
+}
+
+.btn-icon{
+    margin-left: 1rem;
 }
 
 @media(max-width:960px){
